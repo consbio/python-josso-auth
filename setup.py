@@ -5,7 +5,7 @@ setup(
     name='python-josso-auth',
     description='A JOSSO backend for python-social-auth',
     keywords='python-social-auth,sso,josso',
-    version='0.1.2',
+    version='0.1.3',
     packages=['josso'],
     package_dir={'josso': 'josso'},
     package_data={'josso': ['wsdl/*.xml']},
