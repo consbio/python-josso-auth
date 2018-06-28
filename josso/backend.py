@@ -1,6 +1,7 @@
 import os
 import six
-from social.backends.base import BaseAuth
+
+from social_core.backends.base import BaseAuth
 from suds.client import Client
 
 WSDL_DIR = os.path.join(os.path.dirname(__file__), 'wsdl')
@@ -8,8 +9,8 @@ WSDL_DIR = os.path.join(os.path.dirname(__file__), 'wsdl')
 
 class JOSSOAuth(BaseAuth):
     """
-    Base JOSSO authentication backend for python-social-auth. Override and set BASE_URL to implement specific
-    JOSSO providers
+    Base JOSSO authentication backend for python-social-auth.
+    Override and set BASE_URL to implement specific JOSSO providers
     """
 
     ID_KEY = 'username'
