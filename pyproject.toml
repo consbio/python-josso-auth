@@ -1,0 +1,11 @@
+[project]
+name = "python-josso-auth"
+version = "0.2.0"
+description = "A JOSSO backend for python-social-auth"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-social-auth>=0.1.1,<1",
+    "six>=1.17.0",
+    "suds>=1.2.0",
+]
