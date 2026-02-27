@@ -64,6 +64,6 @@ class JOSSOAuth(BaseAuth):
         }
 
     def extra_data(self, user, uid, response, details=None, *args, **kwargs):
-        data = super(JOSSOAuth, self).extra_data(user, uid, response, details)
+        data = super(JOSSOAuth, self).extra_data(user, uid, response, details, *args, **kwargs)
         data['session_id'] = response.get('session_id')
         return data
